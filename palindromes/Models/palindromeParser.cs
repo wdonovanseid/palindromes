@@ -5,7 +5,7 @@ namespace Palindromes
   public class Palindrome
   {
     public string PalinString { get; set; }
-    public PalindromeParser( string palinString )
+    public Palindrome( string palinString )
     {
       PalinString = palinString;
     }
