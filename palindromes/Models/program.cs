@@ -1,9 +1,9 @@
-using System;
+// using System;
 
-namespace Palindromes
-{
-  public class Main
-  {
-    //etc
-  }
-}
+// namespace Palindromes
+// {
+//   class Program
+//   {
+//     //etc
+//   }
+// }

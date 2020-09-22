@@ -12,10 +12,12 @@ namespace Palindromes
 
     public bool CheckPalin()
     {
-      string[] palinArray = PalinString.Split("");
-      string[] reversePalinArray = palinArray;
-      Array.Reverse(palinArray);
-      if (palinArray == reversePalinArray)
+      // string[] palinArray = PalinString.Split("");
+      string[] reversePalinArray = PalinString.Split("");
+      Array.Reverse(reversePalinArray);
+      string reversePalinStr = String.Join("",reversePalinArray);
+      // Console.WriteLine(palinArray[0]);
+      if (PalinString == reversePalinStr)
       {
         return true;
       } else {
