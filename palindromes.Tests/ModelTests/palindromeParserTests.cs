@@ -9,14 +9,14 @@ namespace PalindromeParser.Tests
     [TestMethod]
     public void CheckPalin_IsPalindrome_True()
     {
-      Palindrome testPalin = new Palindrome("tenet");
+      Palindrome testPalin = new Palindrome("tenor");
       Assert.AreEqual(true, testPalin.CheckPalin());
     }
 
     [TestMethod]
     public void CheckPalin_IsPalindrome_False()
     {
-      Palindrome testPalin = new Palindrome("tenor");
+      Palindrome testPalin = new Palindrome("tenet");
       Assert.AreEqual(false, testPalin.CheckPalin());
     }
   }
