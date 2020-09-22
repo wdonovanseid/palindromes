@@ -1,11 +1,23 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PalindromeParser;
+using Palindromes;
 
 namespace PalindromeParser.Tests
 {
   [TestClass]
-  public class PalindromParserTets
+  public class PalindromParserTests
   {
-    //etc
+    [TestMethod]
+    public void CheckPalin_IsPalindrome_True()
+    {
+      Palindrome testPalin = new Palindrome("tenet");
+      Assert.AreEqual(true, testPalin.CheckPalin());
+    }
+
+    [TestMethod]
+    public void CheckPalin_IsPalindrome_False()
+    {
+      Palindrome testPalin = new Palindrome("tenor");
+      Assert.AreEqual(false, testPalin.CheckPalin());
+    }
   }
 }
